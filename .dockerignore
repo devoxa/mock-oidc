@@ -1,0 +1,10 @@
+# Compiled Output
+**/dist/
+
+# Dependencies
+**/node_modules/
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# Development Environments
+**/.history/
