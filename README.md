@@ -33,9 +33,9 @@
 docker run -d --name mock-oidc -p 8093:8093 devoxa/mock-oidc
 ```
 
-- Authentication endpoint: `/auth`
-- Token endpoint: `/token`
-- User info endpoint: `/userinfo`
+- Authentication endpoint: `http://localhost:8093/auth`
+- Token endpoint: `http://localhost:8093/token`
+- User info endpoint: `http://localhost:8093/userinfo`
 
 ## Contributors
 
