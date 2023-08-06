@@ -26,6 +26,8 @@ export function getAuth(request: Request, response: Response) {
 <html>
   <head>
     <title>Mock OpenID Connect</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <form method="POST">
@@ -34,10 +36,7 @@ export function getAuth(request: Request, response: Response) {
       <input type="hidden" name="redirect_uri" value="${query.data.redirect_uri}" />
 
       <p>
-        <label for="email">
-          <span>Email: </span>
-          <strong><span aria-label="required">*</span></strong>
-        </label>
+        <label for="email">Email:</label><br />
         <input type="email" id="email" name="email" required autofocus />
       </p>
 
