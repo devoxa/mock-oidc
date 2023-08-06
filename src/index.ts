@@ -6,7 +6,7 @@ import { postToken } from './routes/postToken'
 import { getUserinfo } from './routes/getUserinfo'
 import { logMiddleware } from './middleware/logMiddleware'
 
-const PORT = process.env.PORT || 8093
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 8093
 
 const app = express()
 
