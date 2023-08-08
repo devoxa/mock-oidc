@@ -5,14 +5,14 @@ WORKDIR /application
 
 # Install the NPM dependencies
 COPY package.json yarn.lock ./
-RUN yarn install --quiet --frozen-lockfile
+RUN yarn install --frozen-lockfile
 
 # Compile the source code
 COPY . ./
 RUN yarn build
 
 # Install the runtime dependencies
-RUN yarn install --production --quiet --frozen-lockfile
+RUN yarn install --production --frozen-lockfile
 
 ## Runner ##
 
