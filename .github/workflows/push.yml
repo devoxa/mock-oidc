@@ -41,7 +41,7 @@ jobs:
 
       - name: 'Set up Docker BuildX'
         if: ${{ github.event_name == 'push' }}
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
 
       - name: 'Login to Dockerhub registry'
         if: ${{ github.event_name == 'push' }}
