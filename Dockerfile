@@ -1,6 +1,6 @@
 ## Builder ##
 
-FROM node:18.17-alpine AS builder
+FROM node:18.18-alpine AS builder
 WORKDIR /application
 
 # Install the NPM dependencies
@@ -16,7 +16,7 @@ RUN yarn install --production --frozen-lockfile
 
 ## Runner ##
 
-FROM node:18.17-alpine AS runner
+FROM node:18.18-alpine AS runner
 WORKDIR /application
 ENV NODE_ENV production
 
