@@ -41,7 +41,7 @@ jobs:
 
       - name: 'Set up Docker BuildX'
         if: ${{ github.event_name == 'push' }}
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
 
       - name: 'Login to Dockerhub registry'
         if: ${{ github.event_name == 'push' }}
@@ -52,7 +52,7 @@ jobs:
 
       - name: 'Build and push Docker container'
         if: ${{ github.event_name == 'push' }}
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           push: true
           tags: devoxa/mock-oidc:latest
