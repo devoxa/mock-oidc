@@ -45,7 +45,7 @@ jobs:
 
       - name: 'Login to Dockerhub registry'
         if: ${{ github.event_name == 'push' }}
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           username: devoxa
           password: ${{ secrets.DOCKERHUB_TOKEN }}
