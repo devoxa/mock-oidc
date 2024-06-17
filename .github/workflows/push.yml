@@ -52,7 +52,7 @@ jobs:
 
       - name: 'Build and push Docker container'
         if: ${{ github.event_name == 'push' }}
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           push: true
           tags: devoxa/mock-oidc:latest
