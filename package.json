@@ -22,7 +22,7 @@
   "prettier": "@devoxa/prettier-config",
   "dependencies": {
     "body-parser": "1.20.3",
-    "express": "4.19.2",
+    "express": "4.20.0",
     "zod": "3.23.8"
   },
   "devDependencies": {
