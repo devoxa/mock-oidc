@@ -12,12 +12,9 @@
     "start": "ts-node-dev --exit-child --respawn --rs src/index.ts",
     "format": "prettier --ignore-path='.gitignore' --list-different --write .",
     "format:check": "prettier --ignore-path='.gitignore' --check .",
-    "lint": "eslint --ignore-path='.gitignore' 'src/**/*.ts'",
+    "lint": "eslint 'src/**/*.ts'",
     "build": "rm -rf dist/ && tsc",
     "preversion": "yarn build"
-  },
-  "eslintConfig": {
-    "extends": "@devoxa"
   },
   "prettier": "@devoxa/prettier-config",
   "dependencies": {
