@@ -2,12 +2,14 @@ import { Request, Response } from 'express'
 import { z } from 'zod'
 import { base64Encode } from '../helpers/base64'
 
+type Redirect = void
+
 const BodySchema = z.object({
   redirect_uri: z.string().url(),
   email: z.string().email(),
 })
 
-export function postAuth(request: Request, response: Response) {
+export function postAuth(request: Request, response: Response): Response | Redirect {
   const body = BodySchema.safeParse(request.body)
 
   if (!body.success) {

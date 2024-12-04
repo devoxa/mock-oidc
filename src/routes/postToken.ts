@@ -16,7 +16,7 @@ const BodySchema = z.object({
   code: z.string().pipe(CodeSchema),
 })
 
-export function postToken(request: Request, response: Response) {
+export function postToken(request: Request, response: Response): Response {
   const body = BodySchema.safeParse(request.body)
 
   if (!body.success) {

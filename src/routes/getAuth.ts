@@ -13,7 +13,7 @@ const QuerySchema = z.object({
   prompt: z.enum(['consent']).optional(),
 })
 
-export function getAuth(request: Request, response: Response) {
+export function getAuth(request: Request, response: Response): Response {
   const query = QuerySchema.safeParse(request.query)
 
   if (!query.success) {
