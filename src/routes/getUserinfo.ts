@@ -16,7 +16,7 @@ const HeadersSchema = z.object({
     .pipe(TokenSchema),
 })
 
-export function getUserinfo(request: Request, response: Response) {
+export function getUserinfo(request: Request, response: Response): Response {
   const headers = HeadersSchema.safeParse(request.headers)
 
   if (!headers.success) {
