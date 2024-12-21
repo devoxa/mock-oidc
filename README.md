@@ -5,7 +5,7 @@
 
 <!-- Description -->
 <h4 align="center">
-  Mock OpenID Connect sign-in for test environments.
+  Mock OpenID Connect sign-in for test environments
 </h4>
 
 <!-- Badges -->
