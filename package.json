@@ -20,7 +20,7 @@
   "dependencies": {
     "body-parser": "1.20.3",
     "express": "4.21.2",
-    "zod": "3.25.29"
+    "zod": "3.25.30"
   },
   "devDependencies": {
     "@devoxa/eslint-config": "4.0.2",
